@@ -59,7 +59,7 @@ const SearchApp = () => {
     setError(null)
     
     try {
-      const response = await axios.post('http://localhost:8564/search', {
+      const response = await axios.post('http://192.168.1.13:8564/search', {
         query: query,
         top_k: 10
       })
@@ -225,4 +225,3 @@ const SearchApp = () => {
 }
 
 export default SearchApp
-
